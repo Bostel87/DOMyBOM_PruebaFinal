@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto Final DOM y BOM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+  <div class="container text-center" >
+  <form class="" action="index.html" method="post" role="form">
+  <div class="form-group">
+  <legend><h1>Registro de Estudiantes</h1></legend>
+  <label for="Codigo">Codigo:</label>
+  <input id="txtCod" type="text" class="form-control text-center" placeholder="Ej:001">
+  <br>
+  <br>
+  <label for="Nombre">Nombre:</label>
+  <input id="txtNom" type="text" class="form-control text-center" placeholder="Ej:Juan">
+  <br>
+  <br>
+  <label for="Apellido">Apellido:</label>
+  <input id="txtApe" type="text" class="form-control text-center" placeholder="Ej:Perez">
+  <br>
+  <br>
+  <label for="Materia">Materia:</label>
+  <input id="txtMate" type="text" class="form-control text-center" placeholder="Ej:Base de Datos">
+  <br>
+  <br>
+  <label for="Nota">Nota:</label>
+  <input id="txtNota" type="text" class="form-control text-center" placeholder="Ej:90">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <button id="registrar" type="button" name="Registrar" class="btn btn-primary form-control" onclick="registrarEstudiante()">Registrar Estudiante</button>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <button id="mostrarP" type="button" name="MotrarPromedio" class="btn btn-primary form-control" onclick="mostrarPromedio()">Mostrar Promedio</button>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <button id="mostrarNM" type="button" name="MostrarNotaMayor" class="btn btn-primary form-control" onclick="mostrarMayor()">Mostrar Nota Mayor</button>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <button id="mostratNm" type="button" name="MostrarNotaMenor" class="btn btn-primary form-control" onclick="mostrarMenor()">Mostrar Nota Menor</button>
+    </div>
+  </div>
+  </div>
+  </form>
+  <hr>
+  <div class="table-responsive text-left">
+    <table id="tabla1" class="table ">
+
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Materia</th>
+      <th>Nota</th>
+
+    </table>
+    </div>
+  </div>
+  </body>
+</html>
